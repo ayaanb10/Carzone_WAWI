@@ -8,10 +8,9 @@ function addToCart(name, price) {
 }
 
 function updateCartCount() {
-    const count = cart.length;
     const cartCountEl = document.getElementById("cart-count");
     if (cartCountEl) {
-        cartCountEl.innerText = count;
+        cartCountEl.innerText = cart.length;
     }
 }
 
@@ -20,8 +19,8 @@ function loadCart() {
     const list = document.getElementById("cart-items");
     const totalEl = document.getElementById("cart-total");
 
-    let total = 0;
     list.innerHTML = "";
+    let total = 0;
 
     cartItems.forEach(item => {
         const li = document.createElement("li");
