@@ -43,10 +43,11 @@ section {
 }
 
 /* Product Grid */
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+.product img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background-color: #f0f0f0;
 }
 
 /* Product Card */
