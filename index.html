@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarZone | Home</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-077XW121VX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-077XW121VX');
-</script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -23,62 +15,61 @@
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
-        <a href="cart.html">Cart</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
     </nav>
 </header>
 
-<main>
-    <section>
-        <h2>Welcome to CarZone</h2>
-        <p>
-            CarZone is your one-stop destination for quality car accessories
-            designed to enhance your driving experience.
-        </p>
-    </section>
+<section>
+    <h2>Welcome to CarZone</h2>
+    <p>Your one-stop destination for premium car accessories.</p>
+</section>
 
-    <section>
-        <h3>Featured Car Accessories</h3>
+<section>
+    <h2>Featured Products</h2>
 
-        <!-- Small Clickable Images -->
-        <a href="#car1">
-            <img src="porsche.jpg"
-                 width="200"
-                 alt="Car Interior">
-        </a>
+    <div class="products">
 
-        <a href="#car2">
-            <img src="city.jpg"
-                 width="200"
-                 alt="Car Accessories">
-        </a>
-    </section>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+            <h4>Car Seat Cover</h4>
+            <p>₹2,499</p>
+            <button onclick="addToCart('Car Seat Cover')">Add to Cart</button>
+        </div>
 
-    <!-- Add to Cart Section -->
-    <section>
-        <h3>Add to Cart</h3>
-        <p>View selected car accessories in your cart.</p>
-        <a href="cart.html">
-            <button>Add Items to Cart</button>
-        </a>
-    </section>
-</main>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+            <h4>Car Phone Holder</h4>
+            <p>₹599</p>
+            <button onclick="addToCart('Car Phone Holder')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+            <h4>Steering Cover</h4>
+            <p>₹799</p>
+            <button onclick="addToCart('Steering Cover')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+            <h4>Car Vacuum Cleaner</h4>
+            <p>₹1,999</p>
+            <button onclick="addToCart('Car Vacuum Cleaner')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+            <h4>LED Headlights</h4>
+            <p>₹3,499</p>
+            <button onclick="addToCart('LED Headlights')">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
 
 <footer>
     <p>© 2025 CarZone. All rights reserved.</p>
 </footer>
-
-<!-- Lightbox Overlays -->
-<div id="car1" class="lightbox">
-    <a href="#" class="close">×</a>
-    <img src="porsche.jpg"
-         alt="Car Interior Large">
-</div>
-
-<div id="car2" class="lightbox">
-    <a href="#" class="close">×</a>
-    <img src="city.jpg"
-         alt="Car Accessories Large">
-</div>
 
 </body>
 </html>
