@@ -19,79 +19,60 @@
     </nav>
 </header>
 
-<main>
+<section>
+    <h2>Featured Products</h2>
 
-    <!-- Welcome Section -->
-    <section>
-        <h2>Welcome to CarZone</h2>
-        <p>
-            Your one-stop destination for premium car accessories that enhance
-            comfort, safety, and driving experience.
-        </p>
-    </section>
+    <div class="products">
 
-    <!-- Products Section -->
-    <section>
-        <h2>Featured Products</h2>
-
-        <div class="products">
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2"
-                     alt="Car Seat Cover">
-                <h4>Car Seat Cover</h4>
-                <p>₹2,499</p>
-                <button onclick="addToCart('Car Seat Cover')">Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1583267746929-6aeb1a4c4a8f"
-                     alt="Car Phone Holder">
-                <h4>Car Phone Holder</h4>
-                <p>₹599</p>
-                <button onclick="addToCart('Car Phone Holder')">Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8"
-                     alt="Steering Wheel Cover">
-                <h4>Steering Wheel Cover</h4>
-                <p>₹799</p>
-                <button onclick="addToCart('Steering Wheel Cover')">Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a"
-                     alt="Car Vacuum Cleaner">
-                <h4>Car Vacuum Cleaner</h4>
-                <p>₹1,999</p>
-                <button onclick="addToCart('Car Vacuum Cleaner')">Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
-                     alt="LED Headlights">
-                <h4>LED Headlights</h4>
-                <p>₹3,499</p>
-                <button onclick="addToCart('LED Headlights')">Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1620920848240-76dcd8f5a7c5"
-                     alt="Car Air Freshener">
-                <h4>Car Air Freshener</h4>
-                <p>₹299</p>
-                <button onclick="addToCart('Car Air Freshener')">Add to Cart</button>
-            </div>
-
+        <div class="product">
+            <a href="#img1">
+                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+            </a>
+            <h4>Car Seat Cover</h4>
+            <p>₹2499</p>
+            <button onclick="addToCart('Car Seat Cover', 2499)">Add to Cart</button>
         </div>
-    </section>
 
-</main>
+        <div class="product">
+            <a href="#img2">
+                <img src="https://images.unsplash.com/photo-1583267746929-6aeb1a4c4a8f">
+            </a>
+            <h4>Car Phone Holder</h4>
+            <p>₹599</p>
+            <button onclick="addToCart('Car Phone Holder', 599)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <a href="#img3">
+                <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8">
+            </a>
+            <h4>Steering Wheel Cover</h4>
+            <p>₹799</p>
+            <button onclick="addToCart('Steering Wheel Cover', 799)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
 
 <footer>
     <p>© 2025 CarZone. All rights reserved.</p>
 </footer>
+
+<!-- Lightbox Images -->
+<div id="img1" class="lightbox">
+    <a href="#" class="close">×</a>
+    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+</div>
+
+<div id="img2" class="lightbox">
+    <a href="#" class="close">×</a>
+    <img src="https://images.unsplash.com/photo-1583267746929-6aeb1a4c4a8f">
+</div>
+
+<div id="img3" class="lightbox">
+    <a href="#" class="close">×</a>
+    <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8">
+</div>
 
 </body>
 </html>
