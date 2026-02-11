@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarZone | Cart</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
     <!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-9jJKlXX_7_8s5Y8Jnz2Kk.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
-
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "vc2yx8w5z1");
+    <script async src="https://plausible.io/js/pa-9jJKlXX_7_8s5Y8Jnz2Kk.js"></script>
+    <script>
+        window.plausible = window.plausible || function () {
+            (plausible.q = plausible.q || []).push(arguments);
+        };
+        plausible.init();
     </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vc2yx8w5z1");
+    </script>
+
 </head>
-<body>
+
+<body onload="loadCart()">
 
 <header>
     <h1>CarZone</h1>
@@ -36,16 +45,16 @@
 <main>
     <section>
         <h2>Your Cart</h2>
-        <p>This is a sample cart page.</p>
+        <p>Items added from the home page will appear below.</p>
 
-        <ul>
-            <li>Car Phone Holder – ₹599</li>
-            <li>Seat Cover – ₹2,499</li>
-        </ul>
+        <!-- Dynamic Cart List -->
+        <ul id="cart-items"></ul>
 
-        <p><strong>Total: ₹3,098</strong></p>
+        <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
 
-        <button>Proceed to Checkout</button>
+        <button onclick="alert('Checkout functionality not implemented yet.')">
+            Proceed to Checkout
+        </button>
     </section>
 </main>
 
